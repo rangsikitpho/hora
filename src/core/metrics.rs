@@ -76,11 +76,6 @@ where
 {
     assert_eq!(vec1.len(), vec2.len());
     // smaller means closer.
-    //Ok(
-    //    -dot(vec1, vec2).unwrap()
-    //        / (dot(vec1, vec1).unwrap().sqrt() * dot(vec2, vec2).unwrap().sqrt()),
-    //)
-
     let dot_product = dot(vec1, vec2).unwrap();
     let root_sum_square1 = dot(vec1, vec1).unwrap().sqrt();
     let root_sum_square2 = dot(vec2, vec2).unwrap().sqrt();
